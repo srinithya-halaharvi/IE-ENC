@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLOYEE INTEREST SURVEY FORM</title>
+    <style>
+        body{
+            background-image:url(background.jpg);
+            background-size:cover;
+            background-attachment:fixed;
+            background-repeat: no-repeat;
+        }
+        input[type=box] {
+            height: 4px;
+            padding: 12px 15px;
+            margin: 4px 0;
+            border: 3px solid rgb(86, 38, 109);
+            border-radius: 8px;
+            background-color:peachpuff;
+            color:peachpuff;
+        }
+        textarea{
+            border: 3px solid rgb(69, 20, 92);
+            border-radius: 8px;
+            background-color:peachpuff;
+        }
+        input[type=submit]{
+            background-color: peachpuff;
+            border: 3px solid rgb(86, 38, 109);
+            border-radius: 8px;
+            width: 15%;
+            font-size: 20px;
+        }
+        .logo img{
+            float: left;
+            width: 50px;
+            height: auto;
+        }
+    </style>
+</head>    
+
+
+<body align="center">
+    <div class="logo">
+        <img src="employee.png">
+    </div>
+    <h1 style="font-family: Algerian"><b>EMPLOYEE INTEREST SURVEY FORM</b></h1>
+    <br>
+    <font color="white" font-family="Comic Sans MS"  size=4>
+    <div>
+        <label for="name">Name:</label>
+        <input type=box name="name" placeholder="Enter your name" />
+    </div>
+    <br>
+    <div>
+        <label for="dprtmnt">Department:</label>
+        <input type=box name="dprtmnt" placeholder="Enter department" />
+    </div>
+    <br>
+    <div>
+        <label for="abt" type=box>Tell us about yourself:</label>
+        <textarea id="abt" name="abt" rows="5" cols="30">
+        </textarea>
+    </div>
+    <br>
+   <div>
+       <label for="excercise">Do you excercise at home? </label>
+       Yes <input name="excercise" type="radio"/> 
+       No <input name="excercise" type="radio"/> 
+    </div>
+    <br>
+    <div>
+        <p> How do you like to read about your favourite topics?</p>
+        Books <input type="checkbox" name="choose">
+        Articles <input type="checkbox" name="choose"> 
+        Online resources <input type="checkbox" name="choose"> 
+        Magazines <input type="checkbox" name="choose"> 
+        Phone Apps <input type="checkbox" name="choose">
+        Newspaper <input type="checkbox" name="choose">
+    </div>
+    <br>
+    <div>
+        <label for="movies"> What genres of movies do you like? </label>
+        <select name="movies" >
+            <option value="0"> Select genre </option>
+            <option value="Comedy">Comedy</option>
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Drama">Drama</option>
+            <option value="Crime and Mystery">Romance</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Romance">Horror</option>
+            <option value="Horror">Documentry</option>
+            <option value="Sci-fi">Sci-fi</option>
+            <option value="Documentary">RomanticComedy</option>
+        </select>
+    </div>
+    <br>
+    <input type="submit" value="Submit form" name="Submit">
+    
+    </font>
+
+</body>
+</html>
